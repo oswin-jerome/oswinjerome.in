@@ -16,7 +16,7 @@ class GetInTouch extends Component{
                 <div className="contact">
                     <div className="wa card-contact">
                         <img src={wa} alt=""/>
-                        <a href="https://api.whatsapp.com/send?phone=+918344441492">+91 8344441492</a>
+                        <a href="https://api.whatsapp.com/send?phone=918344441492">+91 8344441492</a>
                     </div>
                     <div className="phone card-contact">
                         <img src={phone} alt=""/>
