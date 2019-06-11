@@ -1,0 +1,255 @@
+#GetInTouch {
+    color: #818181;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.heading {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.card-contact{
+
+    background-color: #fff;
+    box-shadow: #00000042 0px 0px 5px;
+    margin: 8px 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 40px auto;
+    // justify-content: center;
+    align-items: center;
+    img{
+        width: 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #818181;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (min-width:450px) {
+ 
+
+    .heading {
+        font-size: 20px;
+    }
+
+    #GetInTouch {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:680px) {
+ 
+    .heading {
+        font-size: 24px;
+    }
+
+#GetInTouch {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .card-contact {
+
+       
+        margin: 8px 6px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 50px auto;
+        // justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #818181;
+            font-weight: 600;
+            font-size: 15px;
+        }
+    }
+
+    .mail{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+
+
+}
+
+@media screen and (min-width:780px) {
+    
+
+    .heading {
+        font-size: 26px;
+        margin-bottom: 30px !important;
+    }
+
+    #GetInTouch {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+      .contact {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          width: 65%;
+          margin: auto;
+          margin-top: 20px;
+      }
+
+      .card-contact {
+
+
+          margin: 8px 6px;
+          padding: 10px 15px;
+          border-radius: 5px;
+          display: grid;
+          grid-template-columns: 60px auto;
+          // justify-content: center;
+          align-items: center;
+
+          img {
+              width: 40px;
+          }
+
+          a {
+              text-decoration: none;
+              color: #818181;
+              font-weight: 600;
+              font-size: 16px;
+          }
+      }
+}
+
+@media screen and (min-width:1000px) {
+   
+    .heading {
+        font-size: 28px;
+    }
+
+    #GetInTouch {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .card-contact {
+
+
+        margin: 8px 6px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 60px auto;
+        // justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #818181;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+ 
+
+        #GetInTouch {
+            padding-top: 100px;
+            padding-bottom: 90px;
+        }
+ 
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 55%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .card-contact {
+
+
+        margin: 8px 6px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 60px auto;
+        // justify-content: center;
+        align-items: center;
+
+        img {
+            width: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #818181;
+            font-weight: 600;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width:1400px) {
+   
+
+    #GetInTouch {
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    
+}

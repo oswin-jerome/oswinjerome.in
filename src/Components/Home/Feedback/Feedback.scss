@@ -1,0 +1,214 @@
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+#Feedback {
+    color: #818181;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.heading {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.high {
+    color: var(--primary-color);
+}
+.slide{
+    // background-color: #000;
+    width: 85%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+.glide{
+    // width: 80%;
+    width: 100% !important;
+}
+
+.glide__track{
+    // width: 90%;
+    // overflow: hidden;
+}
+
+.glide__slides{
+    display: flex;
+    padding: 0px;
+}
+
+.glide__slide{
+    // margin: 20px;
+    position: relative;
+    display: block;
+    // transform: scale(0.95);
+    margin:20px 0px;
+   padding: 10px;
+    
+}
+
+.feed_card{
+
+    // dis
+     background-color: #ffffff;
+     box-shadow: #00000044 0px 3px 5px;
+     border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+
+    img{
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .cont{
+
+        .msg{
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .authName{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    }
+}
+
+.glide__arrow--left{
+    position: absolute;
+    top: 45%;
+    left: -20px;
+}
+.glide__arrow--right{
+    position: absolute;
+    top: 45%;
+    right: -20px;
+}
+
+.glide__arrows{
+    img{
+        width: 30px;
+    }
+}
+
+
+@media screen and (min-width:450px) {
+    
+
+    .heading {
+        font-size: 20px;
+    }
+
+    #Feedback {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:680px) {
+   
+
+    .heading {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width:780px) {
+    
+
+    .heading {
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+
+    #Feedback {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .glide__arrow--left {
+        position: absolute;
+        top: 45%;
+        left: -50px;
+    }
+
+    .glide__arrow--right {
+        position: absolute;
+        top: 45%;
+        right: -50px;
+    }
+
+    .feed_card {
+
+        // dis
+     
+
+        img {
+            width: 110px;
+            border-radius: 50%;
+        }
+
+        .cont {
+
+            .msg {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+
+            .authName {
+                margin-top: 15px;
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+    
+
+    .heading {
+        font-size: 28px;
+    }
+
+    #Feedback {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+        #Feedback {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+ 
+
+    .heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    
+
+    #Feedback {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    
+}
+
+
+
+
+
+
+
+

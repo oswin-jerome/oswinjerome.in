@@ -1,0 +1,159 @@
+#TechIWorkWith{
+    color: #818181;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.heading{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.high{
+    color: var(--primary-color);
+}
+
+
+.content{
+
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    img{
+        width: 35px;
+    }
+}
+
+
+@media screen and (min-width:450px){
+    .content {
+
+        margin-top: 40px;
+        margin-bottom: 30px;
+        width: 70%;
+        img {
+            width: 40px;
+        }
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+    #TechIWorkWith {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width:680px){
+    .content {
+
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 70%;
+        grid-gap: 0px;
+        img {
+            width: 50px;
+        }
+    }
+    .heading {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width:780px){
+    .content {
+
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 65%;
+        // grid-gap: -10px;
+        img {
+            width: 60px;
+        }
+    }
+
+    .heading {
+        font-size: 26px;
+        margin-bottom: 60px;
+    }
+    #TechIWorkWith {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width:1000px){
+    .content {
+
+        margin-top: 80px;
+        margin-bottom: 60px;
+        width: 55%;
+        // grid-gap: -10px;
+        img {
+            width: 70px;
+        }
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+    #TechIWorkWith {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (min-width:1200px){
+    .content {
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 50%;
+        // grid-gap: -10px;
+        img {
+            width: 70px;
+        }
+        #TechIWorkWith {
+            padding-top: 100px;
+            padding-bottom: 60px;
+        }
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:1400px){
+    .content {
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 45%;
+        // grid-gap: -10px;
+        img {
+            width: 70px;
+        }
+    }
+    #TechIWorkWith {
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (min-width:1600px){
+    .content {
+
+        margin-top: 80px;
+        margin-bottom: 60px;
+        width: 40%;
+        // grid-gap: -10px;
+        img {
+            width: 70px;
+        }
+    }
+}

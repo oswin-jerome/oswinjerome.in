@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+
+#Hero{
+    // background-color: #eee;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+}
+
+#dp{
+    height: 130px;
+    border-radius: 50%;
+    transition: box-shadow .6s ease,transform .6s ease;
+}
+
+#propic{
+    margin-bottom: 30px;
+    margin-top: 80px;
+    background-color: #eee;
+    border: #fff 4px solid;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: #c7c7c7 15px 15px 0px;
+    height: 130px;
+    width: 130px;
+    transition: box-shadow .3s ease;
+}
+
+#Name{
+    font-size: 40px;
+    font-family: 'Pacifico',cursive;
+    color: #888888;
+}
+
+#ImA{
+    color: #888888;
+    font-size: 15px;
+
+    span{
+        color: #7455DF;
+        font-weight: 500;
+    }
+}
+
+#dp:hover{
+    transform: scale(1.6) rotate(8deg) translateY(10px);
+    
+    
+}
+
+#propic:hover{
+    box-shadow: var(--primary-color) 15px 15px 0px;
+}
+
+.downArrow{
+    // background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    img{
+        margin-bottom: 5px;
+        width: 30px;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+}
+
+
+
+// Tablet
+
+@media screen and (min-width:800px){
+    #propic,#dp{
+      height: 180px;  
+      width: 180px;  
+    }
+    #Name{
+        font-size: 47px;
+    }
+
+    #ImA{
+        font-size: 18px;
+    }
+
+    .downArrow{
+        img{
+            width: 40px;
+        }
+    }
+}
+
+@media screen and (min-width:1000px){
+    #propic,#dp{
+      height: 200px;  
+      width: 200px;  
+    }
+    #Name{
+        font-size: 54px;
+    }
+
+    #ImA{
+        font-size: 19px;
+    }
+}
+
+
+
+
+
+
+
+
+
