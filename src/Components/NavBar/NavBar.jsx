@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import './NavBar.css'
 import hamburgerLogo from './hamburger.svg'
 import logo from './logo.svg'
@@ -47,9 +50,9 @@ class NavBar extends Component {
 
                     <div className="non-mobile">
                         <ul className="nav">
-                            <li><a href="http://localhost:3000/#">Home</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Archivements</a></li>
+                            <li><Link to="/">Home</Link></li>
+                            <li><Link to="/projects">Projects</Link></li>
+                            <li><Link to="/certificates">Certificates</Link></li>
                         </ul>
                     </div>
                 </div>

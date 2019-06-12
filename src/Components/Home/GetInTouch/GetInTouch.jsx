@@ -30,7 +30,6 @@ class GetInTouch extends Component{
             </div>
         );
     }
-
 }
 
 export default GetInTouch;
