@@ -41,9 +41,9 @@ class NavBar extends Component {
                                 <img id="closeBtn" src={close} alt="" />
                             </div>
                             <ul id="mob-nav">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Archivements</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/projects">Projects</Link></li>
+                                <li><Link to="/certificates">Certificates</Link></li>
                             </ul>
                         </div>
                     </div>

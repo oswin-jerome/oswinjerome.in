@@ -50,6 +50,7 @@
   width: 75vw;
   box-shadow: rgba(0, 0, 0, 0.418) 0px 0px 15px;
   transition: left 0.5s ease;
+  z-index: 999;
 }
 
 .drawer ul {
