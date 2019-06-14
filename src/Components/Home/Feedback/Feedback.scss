@@ -4,7 +4,14 @@
     padding-top: 40px;
     padding-bottom: 30px;
 }
+.Overlay {
+    background-color: rgba(0, 0, 0, 0.767) !important;
+    // padding: 0px;
+}
 
+.Model{
+    width: 100%;
+}
 .heading {
     font-size: 18px;
     text-align: center;
@@ -34,7 +41,12 @@
 
 .glide__slides{
     display: flex;
+    flex-direction: row-reverse;
     padding: 0px;
+    
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+
 }
 
 .glide__slide{
@@ -58,6 +70,7 @@
 
     img{
         width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
 
@@ -93,6 +106,26 @@
     }
 }
 
+.gvFeed{
+    display: flex;
+    
+    width: 100%;
+    // background-color: #000;
+
+    button{
+        margin: auto;
+        padding: 10px;
+        background-color: #7455DF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.479) 0px 3px 5px;
+    }
+
+    button:hover{
+        box-shadow: rgba(0, 0, 0, 0.479) 0px 1px 3px;
+    }
+}
 
 @media screen and (min-width:450px) {
     
@@ -147,6 +180,7 @@
 
         img {
             width: 110px;
+            height: 110px;
             border-radius: 50%;
         }
 

@@ -17,3 +17,7 @@
   min-height: 90vh;
   
 }
+
+*{
+  outline: none;
+}

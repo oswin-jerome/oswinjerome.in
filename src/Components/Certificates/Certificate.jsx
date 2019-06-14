@@ -7,27 +7,16 @@ class Certificates extends Component{
 
     render(){
 
-        const d ="Hello world"
         
         const data = [
             {
-                groupTitle: "Courses Group",
+                groupTitle: "Course Certificates",
                 groupID:1,
                 certificates:[
                     {
                         title:"course tite",
                         pic:cc_python,
                         cert_id:1
-                    },
-                    {
-                        title:"course tite 2",
-                        pic:cc_python,
-                        cert_id: 2
-                    },
-                    {
-                        title:"course tite 3",
-                        pic:cc_python,
-                        cert_id: 3
                     },
                 ]
                 

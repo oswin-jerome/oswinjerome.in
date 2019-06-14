@@ -4,7 +4,7 @@ import "./Tech_i_work_with.scss";
 
 
 // Images
-import adobeXD from './adobe-xd.svg';
+// import adobeXD from './adobe-xd.svg';
 import androidStudio from './android-studio.png';
 import flutter from './flutter.svg';
 import Nodejs from './nodejs-icon.svg';

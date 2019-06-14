@@ -40,8 +40,8 @@ class SingleCertificate extends Component{
                    
                 </div>:null} */}
                 <div  className={'fullView '+this.state.cl}>
-                    <img  src={this.props.img} />
-                    <img onClick={()=>{
+                    <img  src={this.props.img} alt=""/>
+                    <img alt="cancel" onClick={()=>{
                         this.setState({
                             attr:false,
                             cl:'hide'

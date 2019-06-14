@@ -1,0 +1,112 @@
+#PageNotFound{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 40px 20px 20px 30px;
+        height: 80vh;
+       
+        img {
+                width: 50%;
+                margin: auto;
+        }
+        .fourOfour{
+                text-align: center;
+                margin-top: 10px;
+
+                #fof{
+                        font-weight: bold;
+                        font-size: 100px;
+                        color: #919191;
+                }
+
+                #notFound{
+                        font-size: 16px;
+                }
+
+
+        }
+}
+
+@media screen and (min-width:600px){
+        
+        #PageNotFound {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-self: center;
+                img {
+                        width: 100% !important;
+                        margin: auto;
+                }
+        }
+        .fourOfour {
+                text-align: center;
+                margin-top: 10px;
+
+                #fof {
+                        font-weight: bold;
+                        font-size: 120px !important;
+                        color: #919191;
+                }
+
+                #notFound {
+                        font-size: 16px;
+                }
+        }
+}
+@media screen and (min-width:850px){
+        
+        #f{
+                width: 75% !important;
+                margin: auto;
+        }
+        #PageNotFound {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-self: center;
+                grid-column-gap: 90px !important;
+
+                img {
+                        width: 100%;
+                        margin: auto;
+                }
+        }
+        .fourOfour {
+                text-align: center;
+                margin-top: 10px;
+
+                #fof {
+                        font-weight: bold;
+                        font-size: 150px !important;
+                        color: #919191;
+                }
+
+                #notFound {
+                        font-size: 16px;
+                }
+        }
+}
+@media screen and (min-width:1050px){
+        #f{
+                width: 60% !important;
+                margin: auto;
+        }
+        #PageNotFound {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-self: center;
+                grid-column-gap: 130px !important;
+        }
+        .fourOfour {
+                text-align: right;
+                margin-top: 10px;
+
+                #fof {
+                        font-weight: bold;
+                        font-size: 180px !important;
+                        color: #919191;
+                }
+
+                #notFound {
+                        font-size: 16px;
+                }
+        }
+}

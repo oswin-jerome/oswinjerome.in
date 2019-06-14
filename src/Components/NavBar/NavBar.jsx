@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link,NavLink } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './NavBar.css'
 import hamburgerLogo from './hamburger.svg'
@@ -41,18 +42,18 @@ class NavBar extends Component {
                                 <img id="closeBtn" src={close} alt="" />
                             </div>
                             <ul id="mob-nav">
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/projects">Projects</Link></li>
-                                <li><Link to="/certificates">Certificates</Link></li>
+                                <li><NavLink to="/" exact activeClassName="NavLinkActiveMob">Home</NavLink></li>
+                            <li><NavLink to="/projects" activeClassName="NavLinkActiveMob">Projects</NavLink></li>
+                            <li><NavLink to="/certificates" activeClassName="NavLinkActiveMob">Certificates</NavLink></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="non-mobile">
                         <ul className="nav">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/projects">Projects</Link></li>
-                            <li><Link to="/certificates">Certificates</Link></li>
+                            <li><NavLink to="/" exact activeClassName="NavLinkActive">Home</NavLink></li>
+                            <li><NavLink to="/projects" activeClassName="NavLinkActive">Projects</NavLink></li>
+                            <li><NavLink to="/certificates" activeClassName="NavLinkActive">Certificates</NavLink></li>
                         </ul>
                     </div>
                 </div>

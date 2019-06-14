@@ -1,10 +1,9 @@
 import React,{Component} from 'react'
 import './Hero.scss'
 import Typed from 'typed.js'
-
+import pro from '../../../assets/pro.jpeg'
 import ProPic from './propic.jpg'
 import Arrow from './expand-button.svg'
-import s from './s.svg'
 class Hero extends Component {
     state = {  }
     componentDidMount(){
@@ -17,13 +16,13 @@ class Hero extends Component {
             loopCount:Infinity
         }
 
-        var typed = new Typed("#typed", options);
+        new Typed("#typed", options);
     }
     render() { 
         return ( 
             <div id="Hero">
-                <div id="propic">
-                    <img id="dp" src={ProPic} alt="" />
+                <div id="propic" className="animated zoomIn fast">
+                    <img id="dp" src={pro} alt="" />
                 </div>
                 <p id="Name">Oswin Jerome</p>
                 <p id="ImA">I'm a <span id="typed"></span></p>
