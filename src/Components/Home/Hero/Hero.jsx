@@ -16,6 +16,8 @@ class Hero extends Component {
             loopCount:Infinity
         }
 
+        var s = document.querySelector('img[alt="www.000webhost.com"]')
+        s.hidden = false;
         new Typed("#typed", options);
     }
     render() { 
@@ -24,7 +26,7 @@ class Hero extends Component {
                 <div id="propic" className="animated zoomIn fast">
                     <img id="dp" src={pro} alt="" />
                 </div>
-                <p id="Name">Oswin Jerome</p>
+                <p id="Name">Oswin Jerome..</p>
                 <p id="ImA">I'm a <span id="typed"></span></p>
 
                 <div className="downArrow">

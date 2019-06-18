@@ -21,9 +21,9 @@ class FeedBackForm extends Component {
                 
                 e.preventDefault()
 
-                var pic = document.querySelector(".ReactCrop__image");
-                var imageHeight = pic.height;
-                var imageWidth = pic.width;
+                // var pic = document.querySelector(".ReactCrop__image");
+                // var imageHeight = pic.height;
+                // var imageWidth = pic.width;
                 // alert(imageWidth)
                 function percent(cp,im){
                         console.log(cp+" "+im)
@@ -35,18 +35,18 @@ class FeedBackForm extends Component {
                 form.append('avatar', this.state.avatar);
                 form.append('name', this.state.name);
                 form.append('content', this.state.msg);
-                form.append('x', percent(this.state.crop.x, imageWidth));
-                form.append('y', percent(this.state.crop.y, imageHeight));
-                form.append('w', percent(this.state.crop.width,imageWidth));
-                form.append('h', percent(this.state.crop.height,imageHeight));
-                form.append('ow', this.state.tw);
-                form.append('oh', this.state.th);
+                // form.append('x', percent(this.state.crop.x, imageWidth));
+                // form.append('y', percent(this.state.crop.y, imageHeight));
+                // form.append('w', percent(this.state.crop.width,imageWidth));
+                // form.append('h', percent(this.state.crop.height,imageHeight));
+                // form.append('ow', this.state.tw);
+                // form.append('oh', this.state.th);
                 const config = {
                         headers: {
                                 'content-type': 'multipart/form-data'
                         }
                 };
-                axios.post("https://oswinjerome-in-server.herokuapp.com/api/feedback/t", form, config).then((response) => {
+                axios.post("https://oswinjerome-in-server.herokuapp.com/api/feedback/", form, config).then((response) => {
                                 
                         if(response.data!==[]){
                                 this.setState({
@@ -102,14 +102,14 @@ class FeedBackForm extends Component {
                                                         var _URL = window.URL || window.webkitURL;
                                                         console.log("OOOOOOOOOOOOO")
                                                         console.log(e.target.files[0])
-                                                        var img = new Image();
-                                                        img.onload =  ()=> {
-                                                                this.setState({
-                                                                        tw:img.width,
-                                                                        th:img.height
-                                                                })
-                                                        };
-                                                        img.src = _URL.createObjectURL(e.target.files[0]);
+                                                        // var img = new Image();
+                                                        // img.onload =  ()=> {
+                                                        //         this.setState({
+                                                        //                 tw:img.width,
+                                                        //                 th:img.height
+                                                        //         })
+                                                        // };
+                                                        // img.src = _URL.createObjectURL(e.target.files[0]);
                                                         reader.readAsDataURL(e.target.files[0]);
                                                 }
                                                 this.setState({
@@ -121,14 +121,14 @@ class FeedBackForm extends Component {
                                         }} type="file" name="fbfAvatar" id="fbfAvatar" accept=".jpg,.jpeg,.png" />
                                 </div>
 
-                               <div className="cp">
+                               {/* <div className="cp">
                                        <ReactCrop onChange={crop => {
                                                console.log(crop)
                                                this.setState({ crop });
                                        }}  onDragEnd={(e)=>{
                                                console.log(e)
                                        }} src={this.state.f} crop={this.state.crop} />
-                               </div>
+                               </div> */}
 
                                 <div>
                                         <button type="submit">SUBMIT</button>

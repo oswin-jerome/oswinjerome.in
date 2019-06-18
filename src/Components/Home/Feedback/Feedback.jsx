@@ -119,6 +119,9 @@ class Feedback extends Component {
 
         return ( 
             <div id="Feedback" className="dark-bg">
+            <div className="broken">
+                <p>This thing is broken.... Oswin is lazy to fix this</p>
+            </div>
                 <p className="heading">Feedbacks / Testimonies</p>
                 <div className="slide">
                     <div className="glide">
