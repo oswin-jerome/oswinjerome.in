@@ -17,7 +17,7 @@ class Hero extends Component {
         }
 
         var s = document.querySelector('img[alt="www.000webhost.com"]')
-        s.hidden = false;
+        s.hidden = false;ṭ
         new Typed("#typed", options);
     }
     render() { 
