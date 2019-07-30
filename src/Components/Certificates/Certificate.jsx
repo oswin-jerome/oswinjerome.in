@@ -14,7 +14,7 @@ class Certificates extends Component{
                 groupID:1,
                 certificates:[
                     {
-                        title:"course tite",
+                        title:"Python 3",
                         pic:cc_python,
                         cert_id:1
                     },

@@ -39,7 +39,7 @@ const sty = {
 class Feedback extends Component {
     state = {
     open: false,
-    feedBackData:["s"],
+    feedBackData:[],
     test:['s','w'],
   };
  
@@ -103,7 +103,7 @@ class Feedback extends Component {
             // Autoplay
         })
         
-        Axios.get('https://oswinjerome-in-server.herokuapp.com/api/feedback/').then((res) => {
+        Axios.get('https://oswin.serveo.net/api/feedback/').then((res) => {
             console.log(res.data)
             this.setState({feedBackData:res.data})
         })
@@ -119,9 +119,9 @@ class Feedback extends Component {
 
         return ( 
             <div id="Feedback" className="dark-bg">
-            <div className="broken">
+            {/* <div className="broken">
                 <p>This thing is broken.... Oswin is lazy to fix this</p>
-            </div>
+            </div> */}
                 <p className="heading">Feedbacks / Testimonies</p>
                 <div className="slide">
                     <div className="glide">
@@ -131,13 +131,10 @@ class Feedback extends Component {
                         
                              {
                                 this.state.feedBackData.map((f)=>{
-                    
-                                        console.log("=============================")
-                                        console.log(f)
-                                        
+                                        console.log(f._id)
                                         return <div key={f._id} className="glide__slide">
-                                    <div className="feed_card">
-                                        <img src={"https://oswinjerome-in-server.herokuapp.com/"+f.image} alt=""/>
+                                    <div  className="feed_card">
+                                        {f.image!=undefined?<img src={"https://oswin.serveo.net/"+f.image} alt=""/>:null}
                                         <div className="cont">
                                             <p className="msg">{f.content}</p>
                                         <p className="authName">- {f.name}</p>
@@ -210,7 +207,7 @@ class SingleSlide extends Component{
         return(
             <div className="glide__slide">
                 <div className="feed_card">
-                    <img src={"https://oswinjerome-in-server.herokuapp.com/"+this.props.pic} alt=""/>
+                    <img src={"https://oswin.serveo.net/"+this.props.pic} alt=""/>
                     <div className="cont">
                         <p className="msg">{this.props.cont}</p>
                     <p className="authName">- {this.props.name}</p>

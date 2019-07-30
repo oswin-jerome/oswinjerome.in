@@ -20,9 +20,13 @@
     margin-top: 20px;
 }
 
+.mail {
+    padding: 15px 15px !important;
+}
 .card-contact{
 
-    background-color: #fff;
+    background: #fff;
+    color: #fff !important;
     box-shadow: #00000042 0px 0px 5px;
     margin: 8px 20px;
     padding: 10px 15px;
@@ -43,7 +47,9 @@
     }
 }
 
-
+.card-contact:hover {
+    box-shadow: #00000052 0px 0px 8px;
+}
 
 @media screen and (min-width:450px) {
  
@@ -93,7 +99,6 @@
 
         a {
             text-decoration: none;
-            color: #818181;
             font-weight: 600;
             font-size: 15px;
         }
@@ -146,7 +151,6 @@
 
           a {
               text-decoration: none;
-              color: #818181;
               font-weight: 600;
               font-size: 16px;
           }
@@ -189,7 +193,6 @@
 
         a {
             text-decoration: none;
-            color: #818181;
             font-weight: 600;
             font-size: 16px;
         }
@@ -234,10 +237,13 @@
 
         a {
             text-decoration: none;
-            color: #818181;
             font-weight: 600;
             font-size: 16px;
         }
+    }
+
+    .mail{
+        padding: 15px 15px;
     }
 }
 

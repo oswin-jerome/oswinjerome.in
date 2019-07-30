@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import './Social.scss'
-
+import $ from 'jquery'
 import fb from './fb.svg';
 import gp from './gp.svg';
 import insta from './insta.svg';
@@ -9,6 +9,12 @@ import tw from './tw.svg';
 class Social extends Component{
     state={
 
+    }
+
+    componentDidMount(){
+         $('#Social').on('appear',()=>{
+             alert(0)
+         })
     }
 
     render(){

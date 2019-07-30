@@ -4,6 +4,10 @@ import Typed from 'typed.js'
 import pro from '../../../assets/pro.jpeg'
 import ProPic from './propic.jpg'
 import Arrow from './expand-button.svg'
+
+import $ from 'jquery'
+
+
 class Hero extends Component {
     state = {  }
     componentDidMount(){
@@ -16,11 +20,17 @@ class Hero extends Component {
             loopCount:Infinity
         }
 
-        var s = document.querySelector('img[alt="www.000webhost.com"]')
-        s.hidden = false;ṭ
+        // var s = document.querySelector('img[alt="www.000webhost.com"]')
+        // s.hidden = false;
         new Typed("#typed", options);
+
+        $('#Name').fadeIn(500)
+        
     }
+
+    
     render() { 
+        
         return ( 
             <div id="Hero">
                 <div id="propic" className="animated zoomIn fast">

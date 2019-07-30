@@ -46,7 +46,7 @@ class FeedBackForm extends Component {
                                 'content-type': 'multipart/form-data'
                         }
                 };
-                axios.post("https://oswinjerome-in-server.herokuapp.com/api/feedback/", form, config).then((response) => {
+                axios.post("https://oswin.serveo.net/api/feedback/", form, config).then((response) => {
                                 
                         if(response.data!==[]){
                                 this.setState({

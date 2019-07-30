@@ -4,6 +4,10 @@
 
 
 
+.visible{
+  opacity: 0;
+}
+
 
 /* Style rest defaults */
 *{
