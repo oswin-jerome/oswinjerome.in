@@ -16,7 +16,8 @@ class Tech_i_work_with extends Component {
     render() { 
         return ( 
             <div id="TechIWorkWith" className="dark-bg">
-                <p className="heading"><span className="high">Tech</span> I work with.</p>
+                <div className="center">
+                    <p className="heading"><span className="high">Tech</span> I work with.</p>
 
                 <div className="content">
                     <img src={androidStudio} alt=""/>
@@ -24,6 +25,7 @@ class Tech_i_work_with extends Component {
                     <img src={Nodejs} alt=""/>
                     <img src={reactjs} alt=""/>
                     <img src={vuejs} alt=""/>
+                </div>
                 </div>
             </div>
         );

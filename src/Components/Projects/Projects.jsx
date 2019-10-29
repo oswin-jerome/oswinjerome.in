@@ -1,6 +1,7 @@
 import React,{ Component } from "react";
 import cc_python from "../../assets/projects/type.png";
 import pp_myweb from "../../assets/projects/myweb.png";
+import pp_wetherapp from "../../assets/projects/weatherapp.png";
 import "./Projects.scss";
 
 import ProjectGroup from "./ProjectGroup";
@@ -25,6 +26,20 @@ class Projects extends Component {
                         link: 'https://oswin1998.cf/'
                     }, 
             ]
+
+            },
+            {
+                groupID: 2,
+                groupTitle: "Flutter",
+                projects:[
+                    {
+                        title:"Weather app",
+                        pic: pp_wetherapp,
+                        proj_id: 4,
+                        link: 'https://oswin1998.github.io/staticapps/projects/weather-app-flutter/'
+                    },
+                    
+                ]
 
             },
             // {

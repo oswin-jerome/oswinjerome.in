@@ -46,23 +46,8 @@ class FeedBackForm extends Component {
                                 'content-type': 'multipart/form-data'
                         }
                 };
-                axios.post("https://oswin.serveo.net/api/feedback/", form, config).then((response) => {
-                                
-                        if(response.data!==[]){
-                                this.setState({
-                                        open:false,
-                                        name:'',
-                                        avatar:'',
-                                        msg:''
-                                })
-                                console.log("sdss")
-                                this.props.onOver(response.data);
-                        }
-
-                        }).catch((error) => {
-                                console.log(error)
-                                alert("Something went worng")
-                        });
+                // axios.po
+                
                      
         }
 
