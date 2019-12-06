@@ -103,10 +103,16 @@ class Feedback extends Component {
             // Autoplay
         })
         
-        // Axios.get('https://oswin.serveo.net/api/feedback/').then((res) => {
-        //     console.log(res.data)
-        //     this.setState({feedBackData:res.data})
-        // })
+        Axios.get('https://oswin1998.cf/api/get.php').then((res) => {
+            if (res.data){
+                console.log(res.data);
+                this.setState({feedBackData:res.data})
+            }else{
+                console.log("Hel");
+            }
+        }).catch(()=>{
+            console.log("error");
+        })
         
 
 
@@ -131,15 +137,20 @@ class Feedback extends Component {
                         
                              {
                                 this.state.feedBackData.map((f)=>{
-                                        console.log(f._id)
-                                        return <div key={f._id} className="glide__slide">
-                                    {/* <div  className="feed_card">
-                                        {f.image!=undefined?<img src={"https://oswin.serveo.net/"+f.image} alt=""/>:null}
+                                        console.log(f.id)
+                                        return <div key={f.id} className="glide__slide">
+                                    <div  className="feed_card">
+                                        {
+                                            f.img != undefined ? < img src = {
+                                                "https://oswin1998.cf/api/" + f.img
+                                            }
+                                            alt = "" / >: null
+                                        }
                                         <div className="cont">
-                                            <p className="msg">{f.content}</p>
+                                            <p className="msg">{f.message}</p>
                                         <p className="authName">- {f.name}</p>
                                         </div>
-                                    </div> */}
+                                    </div>
                                 </div>
                                                 
                                     })
@@ -206,13 +217,16 @@ class SingleSlide extends Component{
     render(){
         return(
             <div className="glide__slide">
-                {/* <div className="feed_card">
-                    <img src={"https://oswin.serveo.net/"+this.props.pic} alt=""/>
+                <div className="feed_card">
+                    < img src = {
+                        "https://oswin1998.cf/api/" + this.props.pic
+                    }
+                    alt = "" / >
                     <div className="cont">
                         <p className="msg">{this.props.cont}</p>
                     <p className="authName">- {this.props.name}</p>
                     </div>
-                </div> */}
+                </div>
             </div>
         )
     }

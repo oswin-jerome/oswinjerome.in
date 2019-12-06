@@ -34,7 +34,9 @@ class Hero extends Component {
         return ( 
             <div id="Hero">
                 <div id="propic" className="animated zoomIn fast">
-                    <img id="dp" src={pro} alt="" />
+                    <div className="lol">
+                        <img id="dp" src={pro} alt="" />
+                    </div>
                 </div>
                 <p id="Name">Oswin Jerome..</p>
                 <p id="ImA">I'm a <span id="typed"></span></p>

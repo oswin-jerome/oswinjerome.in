@@ -14,11 +14,14 @@ class FeedBackForm extends Component {
                         height:10,
                         width:10,
                         th:0,tw:0
-                }
+                },
+                isProcessing:false
         }
 
         submit=(e)=>{
-                
+                this.setState({
+                        isProcessing:true
+                })
                 e.preventDefault()
 
                 // var pic = document.querySelector(".ReactCrop__image");
@@ -32,9 +35,9 @@ class FeedBackForm extends Component {
                         return p;
                 }
                 const form = new FormData();
-                form.append('avatar', this.state.avatar);
+                form.append('img', this.state.avatar);
                 form.append('name', this.state.name);
-                form.append('content', this.state.msg);
+                form.append('msg', this.state.msg);
                 // form.append('x', percent(this.state.crop.x, imageWidth));
                 // form.append('y', percent(this.state.crop.y, imageHeight));
                 // form.append('w', percent(this.state.crop.width,imageWidth));
@@ -46,7 +49,22 @@ class FeedBackForm extends Component {
                                 'content-type': 'multipart/form-data'
                         }
                 };
-                // axios.po
+                axios.post("https://oswin1998.cf/api/post.php", form, config).then((res) => {
+                        console.log(res);
+                        if(res.data['msg']=="success"){
+                                this.setState({
+                                        open: false,
+                                        name: '',
+                                        avatar: '',
+                                        msg: ''
+                                })
+                                console.log("sdss")
+                                this.props.onOver(res.data);
+                        }else{
+                             console.log("error")
+                             alert("Something went worng")
+                        }
+                });
                 
                      
         }
@@ -64,13 +82,13 @@ class FeedBackForm extends Component {
                         <form id="fbfForm" onSubmit={this.submit} >
                                 <div>
                                         <p>Name : </p>
-                                        <input value={this.state.name} type="text" name="fbfName" id="fbfName" placeholder="Your name..." onChange={(e)=>{this.setState({
+                                        <input value={this.state.name} type="text" name="name" id="fbfName" placeholder="Your name..." onChange={(e)=>{this.setState({
                                                 name:e.target.value
                                         })}}/>
                                 </div>
                                 <div>
                                         <p>Message : </p>
-                                        <textarea name="fbfMsg" placeholder="Your message..." onChange={(e)=>{this.setState({
+                                        <textarea name="msg" placeholder="Your message..." onChange={(e)=>{this.setState({
                                                 msg:e.target.value
                                         })}}></textarea>
                                 </div>
@@ -103,7 +121,7 @@ class FeedBackForm extends Component {
                                         
                                         
 
-                                        }} type="file" name="fbfAvatar" id="fbfAvatar" accept=".jpg,.jpeg,.png" />
+                                        }} type="file" name="img" id="fbfAvatar" accept=".jpg,.jpeg,.png" />
                                 </div>
 
                                {/* <div className="cp">
@@ -116,7 +134,7 @@ class FeedBackForm extends Component {
                                </div> */}
 
                                 <div>
-                                        <button type="submit">SUBMIT</button>
+                                        <button type="submit" disabled={this.state.isProcessing}>SUBMIT</button>
                                 </div>
                         </form>
                         </div>
