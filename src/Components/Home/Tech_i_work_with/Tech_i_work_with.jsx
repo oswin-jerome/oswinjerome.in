@@ -25,6 +25,7 @@ class Tech_i_work_with extends Component {
                     <img src={Nodejs} alt=""/>
                     <img src={reactjs} alt=""/>
                     <img src={vuejs} alt=""/>
+                    <img src={vuejs} alt=""/>
                 </div>
                 </div>
             </div>

@@ -26,12 +26,16 @@
     margin-top: 30px;
     margin-bottom: 20px;
     width: 75%;
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    place-items: end center;
     justify-content: center;
     align-self: center;
     align-items: center;
     justify-items: center;
+    
+    
     img{
         width: 35px;
     }

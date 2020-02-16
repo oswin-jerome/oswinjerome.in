@@ -5,6 +5,9 @@
   --secondary-color:rgba(115, 85, 223, 0.767);
 }
 
+.githublink a{
+  color: rgb(167, 167, 167) !important;
+}
 
 #NavBar {
   background-color: rgb(255, 255, 255);
@@ -16,7 +19,7 @@
 
 #NavBar {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 /* .navgation .mobile {
@@ -102,12 +105,66 @@
 }
 
 
+.style-btn{
+  background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+  padding: 15px !important;
+  border-radius: 50px;
+  color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.404) 3px 3px 8px;
+  margin-left: 20px !important;
+}
+.style-btn:hover{
+  transition: all .3s;
+  transform: scale(1.1);
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.404) 3px 3px 12px;
+}
 
+.mob{
+  width: 92%;
+  position: absolute;
+  bottom: 180px;
+  left: 0;
+  right: 0;
+  margin: 0px !important;
+  padding: 0px !important;
+  text-align: center;
+  /* margin: 20px auto 0px auto; */
+}
 
+.btbtn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, rgb(142, 45, 226), rgb(74, 0, 224));
+  padding: 15px !important;
+  text-align: center;
+  text-decoration: none;
+  z-index: 99;
+  color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.404) 3px 3px 8px;
+  transition: all 1s;
+}
+.btntop{
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto; */
+
+  opacity: 0;
+
+  transition: all 1s;
+}
 /* Tablet 850px */
 
+
+
 @media  screen and (min-width:850px){
-    
+    .btbtn{
+      display: none;
+    }
     .navigation{
         /* background-color: #7c7a7a; */
         grid-column-start: 2;

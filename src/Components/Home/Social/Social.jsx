@@ -5,6 +5,7 @@ import fb from './fb.svg';
 import gp from './gp.svg';
 import insta from './insta.svg';
 import tw from './tw.svg';
+import github from './github.svg';
 
 class Social extends Component{
     state={
@@ -23,7 +24,7 @@ class Social extends Component{
                 <p className="heading">Follow me on.</p>
                 <div className="social-links">
                     <a target="_blank" href="https://www.facebook.com/oswin.jerome"><img src={fb} alt=""/></a>
-                    <a target="_blank" href=""><img src={gp} alt=""/></a>
+                    <a target="_blank" href="https://github.com/oswin-jerome"><img src={github} alt=""/></a>
                     <a target="_blank" href="https://www.instagram.com/oswin_jerome/"><img src={insta} alt=""/></a>
                     <a target="_blank" href="https://twitter.com/oswin_jerome"><img src={tw} alt=""/></a>
                 </div>

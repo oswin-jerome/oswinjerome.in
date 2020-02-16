@@ -4,6 +4,7 @@ import pp_myweb from "../../assets/projects/myweb.png";
 import pp_wetherapp from "../../assets/projects/weatherapp.png";
 import pp_compressor from "../../assets/projects/compressor.png";
 import pp_binary_clock from "../../assets/projects/f_binary_clock.jpg";
+import recipe_app from '../../assets/projects/recipe-app-cover.jpg';
 import "./Projects.scss";
 
 import ProjectGroup from "./ProjectGroup";
@@ -51,6 +52,12 @@ class Projects extends Component {
                         pic: pp_binary_clock,
                         proj_id: 5,
                         link: 'https://oswin-jerome.github.io/my-static-web/staticapps/projects/flutter/binary_clock/'
+                    },
+                    {
+                        title:"Recipe's App",
+                        pic: recipe_app,
+                        proj_id: 6,
+                        link: 'https://oswin-jerome.github.io/my-static-web/staticapps/projects/flutter/recipe_app/'
                     },
                     
                 ]

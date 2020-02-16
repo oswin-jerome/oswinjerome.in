@@ -7,6 +7,7 @@ import './NavBar.css'
 import hamburgerLogo from './hamburger.svg'
 import logo from './logo.svg'
 import close from './cancel.svg'
+import resume from '../../assets/resume.pdf'
 class NavBar extends Component {
     state = {  }
     componentDidMount(){
@@ -18,6 +19,19 @@ class NavBar extends Component {
             draw.classList.add('draw-open')
         });
 
+        // var b = document.querySelector('.btbtn');
+
+        // b.addEventListener('scroll',()=>{
+        //     alert(0)
+        // })
+        // window.addEventListener('scroll',(e)=>{
+        //     if(window.pageYOffset>10){
+        //         b.classList.add('btntop');
+        //     }else{
+        //         b.classList.remove('btntop');
+
+        //     }
+        // })
 
         close.addEventListener('click',()=>{
             draw.classList.remove('draw-open')
@@ -31,7 +45,7 @@ class NavBar extends Component {
     render() { 
         return ( 
             <div id="NavBar">
-                
+                {/* <a className="btbtn" href={resume}>Get my resume</a> */}
                 <div className="navigation">
                     <div className="mobile">
                         <div className="hamburger">
@@ -45,7 +59,9 @@ class NavBar extends Component {
                                 <li><NavLink to="/" exact activeClassName="NavLinkActiveMob">Home</NavLink></li>
                             <li><NavLink to="/projects" activeClassName="NavLinkActiveMob">Projects</NavLink></li>
                             <li><NavLink to="/certificates" activeClassName="NavLinkActiveMob">Certificates</NavLink></li>
+                            {/* <li className="mob"><a className="style-btn mxob" href={resume}>Get my resume</a></li> */}
                             </ul>
+                            
                         </div>
                     </div>
 
@@ -54,6 +70,8 @@ class NavBar extends Component {
                             <li><NavLink to="/" exact activeClassName="NavLinkActive">Home</NavLink></li>
                             <li><NavLink to="/projects" activeClassName="NavLinkActive">Projects</NavLink></li>
                             <li><NavLink to="/certificates" activeClassName="NavLinkActive">Certificates</NavLink></li>
+                            <li><a className="style-btn" href={resume}>Get my resume</a></li>
+                            {/* <li className="githublink"><NavLink to="/certificates" activeClassName="NavLinkActive">GitHub</NavLink></li> */}
                         </ul>
                     </div>
                 </div>
